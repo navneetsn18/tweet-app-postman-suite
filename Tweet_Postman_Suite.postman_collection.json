@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"email\": \"test@gmail.com\",\r\n  \"firstName\": \"test\",\r\n  \"lastName\": \"data\",\r\n  \"password\": \"test\",\r\n  \"username\": \"test\"\r\n}",
+					"raw": "{\r\n  \"email\": \"testing.fornsn@gmail.com\",\r\n  \"firstName\": \"test\",\r\n  \"lastName\": \"data\",\r\n  \"password\": \"test\",\r\n  \"username\": \"testingfornsn\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -31,6 +31,29 @@
 						"v1.0",
 						"user",
 						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forgot Password (Not Logged In)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1.0/user/forgotpassword/testingfornsn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1.0",
+						"user",
+						"forgotpassword",
+						"testingfornsn"
 					]
 				}
 			},
@@ -61,12 +84,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "test",
+							"value": "pass",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "test",
+							"value": "testingfornsn",
 							"type": "string"
 						}
 					]
@@ -194,7 +217,7 @@
 			"response": []
 		},
 		{
-			"name": "Forgot Password",
+			"name": "Reset Password(Logged In)",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -213,7 +236,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"navneetsn18\",\r\n    \"password\": \"pass\"\r\n}",
+					"raw": "{\r\n    \"username\": \"{{username}}\",\r\n    \"password\": \"pass\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -221,7 +244,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8081/api/v1.0/user/forgotpassword",
+					"raw": "http://localhost:8081/api/v1.0/user/resetpassword",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -231,7 +254,7 @@
 						"api",
 						"v1.0",
 						"user",
-						"forgotpassword"
+						"resetpassword"
 					]
 				}
 			},
