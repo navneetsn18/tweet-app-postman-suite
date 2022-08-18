@@ -9,7 +9,8 @@ This is the postman suite to test tweet app backend.
 
 ## Import The Project
 
- - [Project Url](https://git03.iiht.tech/navneetnegi/tweet-app)
+ - [Backend Project Url](https://git03.iiht.tech/navneetnegi/tweet-app)
+ - [Frontend Project Url](https://git03.iiht.tech/navneetnegi/tweet-app-frontend/)
  
 ## Authors
 
